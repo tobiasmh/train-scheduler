@@ -1,0 +1,81 @@
+{"destination": "DhobyGhaut",
+
+  "stations": [{
+
+    "name": "Punggol",
+    "passengers": 80,
+    "connectedStations": ["Sengkang"],
+    "lines": ["purple"]
+  }, {
+
+    "name": "Sengkang",
+    "passengers": 40,
+    "connectedStations": ["Punggol","Serangoon"],
+    "lines": ["purple"]
+  }, {
+
+    "name": "Serangoon",
+    "passengers": 40,
+    "connectedStations": ["Sengkang", "LittleIndia", "PayaLebar", "Bishan"],
+    "lines": ["purple", "circle"]
+  },{
+
+    "name": "LittleIndia",
+    "passengers": 40,
+    "connectedStations": ["Serangoon","DhobyGhaut"],
+    "lines": ["purple"]
+  },
+    {
+
+      "name": "DhobyGhaut",
+      "passengers": 20,
+      "connectedStations": ["LittleIndia", "HarbourFront", "MarinaBay", "Orchard", "PayaLebar"],
+      "lines": ["purple", "red", "circle"]
+
+    }, {
+
+      "name": "HarbourFront",
+      "passengers": 90,
+      "connectedStations": ["DhobyGhaut"],
+      "lines": ["purple"]
+
+    }, {
+      "name": "Orchard",
+      "passengers": 30,
+      "connectedStations": ["DhobyGhaut", "Novena"],
+      "lines": ["red"]
+
+    },{
+      "name": "Novena",
+      "passengers": 10,
+      "connectedStations": ["Orchard", "Bishan"],
+      "lines": ["red"]
+
+    },
+    {
+      "name": "Bishan",
+      "passengers": 20,
+      "connectedStations": ["Woodlands", "Novena", "Serangoon"],
+      "lines": ["red","circle"]
+
+    },
+    {
+      "name": "Woodlands",
+      "passengers": 40,
+      "connectedStations": ["Bishan"],
+      "lines": ["red"]
+
+    }, {
+      "name": "MarinaBay",
+      "passengers": 100,
+      "connectedStations": ["DhobyGhaut"],
+      "lines": ["red"]
+    },
+    {
+      "name": "PayaLebar",
+      "passengers": 75,
+      "connectedStations": ["DhobyGhaut","Serangoon"],
+      "lines": ["circle"]
+    }
+  ]
+}
